@@ -1,0 +1,20 @@
+{
+  "name": "padre-ginos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.{js,jsx,css}\"",
+    "lint": "eslint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "eslint": "^9.9.1",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.9.0",
+    "prettier": "^3.4.2"
+  }
+}
