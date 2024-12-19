@@ -1,34 +1,20 @@
 import {createRoot} from "react-dom/client";
-import pizza from "./pizza";
+import Pizza from "./pizza";
 
 
 
 const App = () => {
-  return React.createElement("div", {}, [
-    React.createElement("h1", {}, "padre gino's"),
-    React.createElement(pizza, {
-      title: "Pepperoni",
-      description: "Pepperoni, cheese, tomato sauce",
-    }),
-    React.createElement(pizza, {
-      title: "Margherita",
-      description: "Mozzarella, tomato sauce, basil",
-    }),
-    React.createElement(pizza, {
-      title: "Hawaiian",
-      description: "Pineapple, ham, cheese, tomato sauce",
-    }),
-    React.createElement(pizza, {
-      title: "BBQ Chicken",
-      description: "BBQ sauce, chicken, cheese, onion",
-    }),
-    React.createElement(pizza, {
-      title: "Vegetarian",
-      description: "Mushrooms, bell peppers, olives, cheese, tomato sauce",
-    }),
-  ]);
-};
+  return (
+    <div>
+      <h1>padre ginos - Order Now</h1>
+      <Pizza name="pepporoni" description="pep , cheese, n stuff"/>
+      <Pizza name="margarita" description="cheese, tomato, basil"/>
+      <Pizza name="hawaiian" description="ham, cheese, pineapple"/>
 
+    </div>
+  );
+
+};
 const container = document.getElementById("root");
 const root = createRoot(container);
-root.render(React.createElement(App));
+root.render(<App/>);
