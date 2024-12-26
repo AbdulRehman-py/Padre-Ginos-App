@@ -4,6 +4,7 @@ import { useState } from "react";
 import PizzaOfTheDay from "../PizzaOfTheDay";
 import Header from "../Header";
 import { CartContext } from "../contexts";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools"; // Correct import path
 
 export const Route = createRootRoute({
   component: () => {
@@ -18,6 +19,7 @@ export const Route = createRootRoute({
           </div>
         </CartContext.Provider>
         <TanStackRouterDevtools />
+        <ReactQueryDevtools />
       </>
     );
   },
