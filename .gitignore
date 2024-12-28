@@ -4,3 +4,4 @@ dist/
 .env
 coverage/   
 .vscode/
+.src/routeTree.gen.ts/
