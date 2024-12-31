@@ -1,7 +1,55 @@
+# System files
 .DS_Store
+
+# Node modules
 node_modules/
+
+# Build output
 dist/
+
+# Environment variables
 .env
-coverage/   
+.env.development
+.env.production
+
+# Coverage reports
+coverage/
+
+# VS Code settings
 .vscode/
-.src/routeTree.gen.ts/
+
+# Generated files
+src/routeTree.gen.ts/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# IDE specific files
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# MacOS specific files
+.DS_Store
+
+# Windows specific files
+Thumbs.db
