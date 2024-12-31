@@ -73,14 +73,16 @@ const intl = new Intl.NumberFormat("en-Us",{
   },[]);  
 
 
+  function pizzacartset () {
+    setCart([...cart,{pizza: selectedPizza, size: pizzaSize ,  price}]);
+  }
+
+
   return (
     <div className="order-page">
     <div className="order">
       <h2>Create Order</h2>
-      <form onSubmit={(e) => {
-        e.preventDefault();
-        setCart([...cart,{pizza: selectedPizza, size: pizzaSize ,  price}]);
-      }}
+      <form action={pizzacartset}
         >
         <div>
           <div>
